@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="shunkouliu">
+    
+    
+    
+    
+    
+    
+    <title>ShunKouLiu</title>
+    <!-- inject:style -->
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <!-- endinject -->
+    <style>
+        .cube-loading {
+            top: 0;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: url('/images/lg/loading.gif') no-repeat center center;
+            background-color: rgba(0,0,0,.7);
+        }
+
+        .cube-loading.out {
+            display: none;
+        }
+
+        .cube-loading:before {
+            display: block;
+            content: 'Loading';
+            position: relative;
+            width: 100%;
+            top: 50%;
+            right: -50%;
+            color: #fff;
+        }
+
+        @media(max-width: 768px) {
+            .cube-loading:before {
+                font-size: 1.2em;
+                transform: translate(-24px,20px);
+                -webkit-transform: translate(-24px,20px);
+                -o-transform: translate(-24px,20px);
+                -ms-transform: translate(-24px,20px);
+            }
+        }
+
+        @media(min-width: 768px) {
+            .cube-loading:before {
+
+            }
+        }
+    </style>
+    
+</head></html>
+<body>
+<div class="cube-body">
+    <nav id="cube-top-memu" class="cube-menu">
+    <ul class="cube-menu-collapse">
+        
+        <li>
+            <i class="cube-icon cube-icon-home" aria-hidden="true"></i>
+            <a href="/">首页</a>
+        </li>
+        
+        <li>
+            <i class="cube-icon cube-icon-archive" aria-hidden="true"></i>
+            <a href="/archives">归档</a>
+        </li>
+        
+        <li>
+            <i class="cube-icon cube-icon-categories" aria-hidden="true"></i>
+            <a href="/categories">分类</a>
+        </li>
+        
+        <li>
+            <i class="cube-icon cube-icon-tags" aria-hidden="true"></i>
+            <a href="/tags">标签</a>
+        </li>
+        
+        <li>
+            <i class="cube-icon cube-icon-about" aria-hidden="true"></i>
+            <a href="/about-me">关于我</a>
+        </li>
+        
+    </ul>
+</nav>
+<nav class="cube-side-menu" id="cube-side-menu">
+    <ul class="cube-menu-list">
+        
+        <li>
+            <a class="lrc-control">Open Lyrics</a>
+        </li>
+        
+        <li>
+            <a class="scroll-to-top">Top</a>
+        </li>
+    </ul>
+</nav>
+    <header class="cube-header" id="cube-header">
+    <img src=" http://att.bbs.duowan.com/forum/201504/12/203213g0vkk3823j305i2h.jpg " alt="头部背景图片">
+    
+    <div class="cube-type">
+        <span class="cube-typed-title">ShunKouLiu</span>
+        <span class="cube-typed-cursor">|</span>
+    </div>
+    
+</header>
+
+    <style>
+        nav.cube-menu:before {
+            content: '';
+            visibility: hidden;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 44px;
+        
+            filter: blur(7px);
+            -webkit-filter: blur(7px);
+        
+            z-index: -1;
+            background-image: url('http://uploads.5068.com/allimg/171204/74-1G204091I8.jpg');
+            background-repeat: no-repeat;
+            background-position: center -356px;
+            background-size: cover;
+            background-color: transparent;
+        }
+
+        header.cube-background.cube-header-background {
+            visibility: hidden;
+            background-image: url('http://uploads.5068.com/allimg/171204/74-1G204091I8.jpg');
+            background-position: center -400px;
+        }
+    </style>
+    <header class="cube-background cube-header-background">
+        
+        <div class="cube-type">
+            <span class="cube-typed-title">ShunKouLiu</span>
+            <span class="cube-typed-cursor">|</span>
+        </div>
+        
+    </header>
+    <div class="load-header-background"></div>
+    <script>
+        (function (window) {
+
+            window.headerModule = {}
+            window.headerModule.image = {
+                width: '2000',
+                height: '1300'
+            }
+
+        })(window)
+    </script>
+    
+    <div class="cube-content">
+        <div class="cube-left">
+            <div class="cube-article">
+    <h1 class="title"></h1>
+    
+    <div class="cube-article-header">
+        <div class="cube-article-date">
+            <i class="cube-icon cube-icon-date" aria-hidden="true"></i>
+            <!-- moment.js对象 -->
+            2019-07-19
+        </div>
+        <div class="cube-article-tags">
+    <i class="cube-icon cube-icon-tag" aria-hidden="true"></i>
+    
+</div>
+    </div>
+    
+    <div class="cube-article-content cube-markdown">
+        
+        <h1 id="day9-作业"><a href="#day9-作业" class="headerlink" title="day9-作业"></a>day9-作业</h1><p>1.编写函数，求1+2+3+…N的和  </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">nums_sum</span><span class="params">(nums)</span>:</span></span><br><span class="line">    num = <span class="number">0</span></span><br><span class="line">    sum_nums = <span class="number">0</span></span><br><span class="line">    <span class="keyword">while</span> num &lt;= nums:</span><br><span class="line">        sum_nums += num</span><br><span class="line">        num += <span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> sum_nums</span><br></pre></td></tr></table></figure>
+
+<p>2.编写一个函数，求多个数中的最大值 </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">max_num</span><span class="params">(*nums)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> nums:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">None</span></span><br><span class="line">    <span class="keyword">return</span>(max(nums))</span><br></pre></td></tr></table></figure>
+
+<p>3.编写一个函数，实现摇骰子的功能，打印N个骰子的点数和  </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">counts</span><span class="params">(N)</span>:</span></span><br><span class="line">    print(random.randint(<span class="number">1</span>, N*<span class="number">6</span>))</span><br></pre></td></tr></table></figure>
+
+<p>4.编写一个函数，交换指定字典的key和value。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">exchange_</span><span class="params">(dict1)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> key <span class="keyword">in</span> dict1.copy():</span><br><span class="line">        value = dict1.pop(key)</span><br><span class="line">        dict1[value] = key</span><br></pre></td></tr></table></figure>
+
+<p>5.编写一个函数，提取指定字符串中所有的字母，然后拼接在一起产生一个新的字符串</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">extract_letter</span><span class="params">(str1)</span>:</span></span><br><span class="line">    new_str1 = <span class="string">''</span></span><br><span class="line">    <span class="keyword">for</span> item <span class="keyword">in</span> str1:</span><br><span class="line">        <span class="keyword">if</span> <span class="string">'a'</span> &lt;= item &lt;= <span class="string">'z'</span> <span class="keyword">or</span> <span class="string">'A'</span> &lt;= item &lt;= <span class="string">'Z'</span>:</span><br><span class="line">            new_str1 += item</span><br><span class="line">    <span class="keyword">return</span> new_str1</span><br></pre></td></tr></table></figure>
+
+<p>6.写一个函数，求多个数的平均值  </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_avg</span><span class="params">(*num)</span>:</span></span><br><span class="line">    print(sum(num) / len(num))</span><br></pre></td></tr></table></figure>
+
+<p>7.写一个函数，默认求10的阶乘，也可以求其他数字的阶乘 </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_factorial</span><span class="params">(num=<span class="number">10</span>)</span>:</span></span><br><span class="line">    result1 = <span class="number">1</span></span><br><span class="line">    <span class="keyword">for</span> value <span class="keyword">in</span> range(<span class="number">1</span>, num+<span class="number">1</span>):</span><br><span class="line">        result1 *= value</span><br><span class="line">    print(result1)</span><br></pre></td></tr></table></figure>
+
+<p>8.写一个自己的capitalize函数，能够将指定字符串的首字母变成大写字母</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">my_capitalize</span><span class="params">(str1)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> str1:</span><br><span class="line">        <span class="keyword">return</span> str1</span><br><span class="line">    <span class="keyword">if</span> <span class="string">'a'</span> &lt;= str1[<span class="number">0</span>] &lt;= <span class="string">'z'</span>:</span><br><span class="line">        item1 = chr(ord(str1[<span class="number">0</span>])<span class="number">-32</span>)</span><br><span class="line">        str1 = item1 + str1[<span class="number">1</span>:]</span><br><span class="line">    <span class="keyword">return</span> str1</span><br></pre></td></tr></table></figure>
+
+<p>9.写一个自己的endswith函数，判断一个字符串是否已指定的字符串结束</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">my_endswith</span><span class="params">(str1: str, str2: str)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> str1[-len(str2):] == str2:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">False</span></span><br></pre></td></tr></table></figure>
+
+<p>10.写一个自己的isdigit函数，判断一个字符串是否是纯数字字符串  </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">my_isdigit</span><span class="params">(str1)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> index <span class="keyword">in</span> range(len(str1)):</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span>(<span class="string">'0'</span> &lt;= str1[index] &lt;= <span class="string">'9'</span>):</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">True</span></span><br></pre></td></tr></table></figure>
+
+<p>11.写一个自己的upper函数，将一个字符串中所有的小写字母变成大写字母</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">my_upper</span><span class="params">(str1)</span>:</span></span><br><span class="line">    new_str1 = <span class="string">''</span></span><br><span class="line">    <span class="keyword">for</span> item <span class="keyword">in</span> str1:</span><br><span class="line">        <span class="keyword">if</span> <span class="string">'a'</span> &lt;= item &lt;= <span class="string">'z'</span>:</span><br><span class="line">            item = chr(ord(item)<span class="number">-32</span>)</span><br><span class="line">            new_str1 += item</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            new_str1 += item</span><br><span class="line">    str1 = new_str1</span><br><span class="line">    <span class="keyword">return</span> str1</span><br></pre></td></tr></table></figure>
+
+<p>12.写一个自己的rjust函数，创建一个字符串的长度是指定长度，原字符串在新字符串中右对齐，剩下的部分用指定的字符填充  </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">my_rjust</span><span class="params">(str1, width, symbol)</span>:</span></span><br><span class="line">    str1 = symbol*(width-len(str1)) + str1</span><br><span class="line">    <span class="keyword">return</span> str1</span><br></pre></td></tr></table></figure>
+
+<p>13写一个自己的index函数，统计指定列表中指定元素的所有下标，如果列表中没有指定元素返回-1</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">my_index</span><span class="params">(str1, str2)</span>:</span></span><br><span class="line">    count = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> index <span class="keyword">in</span> range(len(str1)):</span><br><span class="line">        <span class="keyword">if</span> str1[index:index+len(str2)] == str2:</span><br><span class="line">            print(index, end=<span class="string">' '</span>)</span><br><span class="line">            count += <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> count == <span class="number">0</span>:</span><br><span class="line">        print(<span class="string">'-1'</span>)</span><br></pre></td></tr></table></figure>
+
+<p>14.写一个自己的len函数，统计指定序列中元素的个数</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">my_len</span><span class="params">(list1)</span>:</span></span><br><span class="line">    length = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> intem <span class="keyword">in</span> list1:</span><br><span class="line">        length += <span class="number">1</span></span><br><span class="line">    print(length)</span><br></pre></td></tr></table></figure>
+
+<p>15.写一个自己的max函数，获取指定序列中元素的最大值。如果序列是字典，取字典值的最大值</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">my_max</span><span class="params">(sequence)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> type(sequence) == dict:</span><br><span class="line">        list1 = []</span><br><span class="line">        <span class="keyword">for</span> value <span class="keyword">in</span> sequence:</span><br><span class="line">            list1.append(sequence[value])</span><br><span class="line">        max_value = list1[<span class="number">0</span>]</span><br><span class="line">        <span class="keyword">for</span> item <span class="keyword">in</span> list1:</span><br><span class="line">            <span class="keyword">if</span> max_value &lt; item:</span><br><span class="line">                max_value = item</span><br><span class="line">        print(max_value)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        max_value = sequence[<span class="number">0</span>]</span><br><span class="line">        <span class="keyword">for</span> item <span class="keyword">in</span> sequence:</span><br><span class="line">            <span class="keyword">if</span> max_value &lt; item:</span><br><span class="line">                max_value = item</span><br><span class="line">        print(max_value)</span><br></pre></td></tr></table></figure>
+
+<p>16.写一个函数实现自己in操作，判断指定序列中，指定的元素是否存在  </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">my_in</span><span class="params">(str1, str2)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> item <span class="keyword">in</span> str1:</span><br><span class="line">        <span class="keyword">if</span> item == str2:</span><br><span class="line">            print(<span class="literal">True</span>)</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="literal">False</span>)</span><br></pre></td></tr></table></figure>
+
+<p>17.写一个自己的replace函数，将指定字符串中指定的旧字符串转换成指定的新字符串</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">my_replace</span><span class="params">(str1, str2, str3)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> value <span class="keyword">in</span> range(len(str1)):</span><br><span class="line">        <span class="keyword">if</span> str1[value:value+len(str2)] == str2:</span><br><span class="line">            str1 = str1[:value]+str3+str1[value+len(str2):]</span><br><span class="line">    <span class="keyword">return</span> str1</span><br></pre></td></tr></table></figure>
+
+<p>18.写四个函数，分别实现求两个列表的交集、并集、差集、补集的功能 </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">intersect</span> <span class="params">(list1, list2)</span>:</span></span><br><span class="line">    new_list = []</span><br><span class="line">    <span class="keyword">for</span> item1 <span class="keyword">in</span> list1:</span><br><span class="line">        <span class="keyword">for</span> item2 <span class="keyword">in</span> list2:</span><br><span class="line">            <span class="keyword">if</span> item1 == item2:</span><br><span class="line">                new_list.append(item1)</span><br><span class="line">    <span class="keyword">return</span> new_list</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">union_set</span><span class="params">(list1, list2)</span>:</span></span><br><span class="line">    new_list = []</span><br><span class="line">    <span class="keyword">for</span> item <span class="keyword">in</span> list1:</span><br><span class="line">        <span class="keyword">if</span> item <span class="keyword">not</span> <span class="keyword">in</span> new_list:</span><br><span class="line">            new_list.append(item)</span><br><span class="line">    print(new_list)</span><br><span class="line">    <span class="keyword">for</span> item <span class="keyword">in</span> list2:</span><br><span class="line">        <span class="keyword">if</span> item <span class="keyword">not</span> <span class="keyword">in</span> new_list:</span><br><span class="line">            new_list.append(item)</span><br><span class="line">    <span class="keyword">return</span> new_list</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">deference_set</span><span class="params">(list1, list2)</span>:</span></span><br><span class="line">    new_list = []</span><br><span class="line">    <span class="keyword">for</span> item <span class="keyword">in</span> list1:</span><br><span class="line">        <span class="keyword">if</span> item <span class="keyword">not</span> <span class="keyword">in</span> list2:</span><br><span class="line">            new_list.append(item)</span><br><span class="line">    <span class="keyword">return</span> new_list</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">symmetric_difference_set</span><span class="params">(list1, list2)</span>:</span></span><br><span class="line">    new_list = []</span><br><span class="line">    <span class="keyword">for</span> item <span class="keyword">in</span> list1:</span><br><span class="line">        <span class="keyword">if</span> item <span class="keyword">not</span> <span class="keyword">in</span> list2:</span><br><span class="line">            new_list.append(item)</span><br><span class="line">    print(new_list)</span><br><span class="line">    <span class="keyword">for</span> item <span class="keyword">in</span> list2:</span><br><span class="line">        <span class="keyword">if</span> item <span class="keyword">not</span> <span class="keyword">in</span> list1:</span><br><span class="line">            new_list.append(item)</span><br><span class="line">    <span class="keyword">return</span> new_list</span><br></pre></td></tr></table></figure>
+
+
+    </div>
+</div>
+
+<div class="cube-article-nav">
+    <ul>
+        
+        <li class="prev">
+            <a href="/2019/07/19/day6-字符串/">
+                <i class="cube-icon cube-prev" aria-hidden="true"></i>
+                
+            </a>
+        </li>
+        
+        
+        <li class="next">
+            <a href="/2019/07/19/day8-作业/">
+                
+                <i class="cube-icon cube-next" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+<!-- TODO 根据theme.comment的内容进行入口选择 -->
+
+
+
+        </div>
+        <div class="cube-right">
+            
+
+<div class="cube-search cube-sidebar" id="cube-search">
+    <div class="search-container">
+        <input type="text" placeholder="Search" class="cube-search-input" id="cube-search-input">
+        <i class="cube-icon cube-icon-search cube-search-submit" aria-hidden="true"></i>
+    </div>
+    <!-- TODO 通过给window赋一个全局变量，通过脚本赋值 -->
+</div>
+<script>
+    (function (window) {
+        'use strict';
+        window.searchModule = {}
+        window.searchModule.JSONUrl = '/content.json'
+        window.searchModule.rootUrl = '/'
+    })(window)
+</script>
+<div class="cube-search-form">
+    <div class="cube-search-control">
+        <input type="text" placeholder="Search" class="search-input">
+        <a class="close-button">
+            <i class="cube-icon cube-close" aria-hidden="true"></i>
+        </a>
+    </div>
+    <div class="cube-search-result"></div>
+</div>
+
+
+<div class="cube-author cube-sidebar" id="cube-author">
+    
+    
+    <span>shunkouliu</span>
+    
+    
+    <div class="count">
+        <a class="count articles"><span>11</span>Article</a>
+        <a class="count tags"><span>0</span>Tags</a>
+        <a class="count categories"><span>0</span>Categories</a>
+    </div>
+</div>
+
+
+
+<div class="cube-music cube-sidebar" id="cube-music">
+    <div class="cube-player aplayer" id="cube-player"></div>
+</div>
+<script>
+    (function (window) {
+        window.musicModule = {}
+        window.musicModule.musicConfig = '{"narrow":false,"autoplay":false,"showlrc":3,"theme":"#b7daff","mutex":true,"mode":"circulation","preload":"auto","listmaxheight":"513px","music":[{"title":"Dear friends","author":"TRIPLANE","url":"http://cube-1252774894.cosgz.myqcloud.com/music/source/TRIPLANE - Dear friends.mp3","lrc":"http://cube-1252774894.cosgz.myqcloud.com/music/lrc/Dear friends - TRIPLANE.lrc","pic":"http://cube-1252774894.cosgz.myqcloud.com/music/image/TRIPLANE - Dear friends.jpg"},{"title":"Butter-Fly","author":"和田光司","url":"http://cube-1252774894.cosgz.myqcloud.com/music/source/和田光司 - Butter-Fly (ピアノヴァージョン).mp3","lrc":"http://cube-1252774894.cosgz.myqcloud.com/music/lrc/Butter-Fly (ピアノヴァージョン) - 和田光司.lrc","pic":"http://cube-1252774894.cosgz.myqcloud.com/music/image/和田光司 - Butter-Fly (ピアノヴァージョン).jpg"},{"title":"宵闇花火","author":"葉月ゆら","url":"http://cube-1252774894.cosgz.myqcloud.com/music/source/葉月ゆら - 宵闇花火.mp3","lrc":"http://cube-1252774894.cosgz.myqcloud.com/music/lrc/宵闇花火 - 葉月ゆら.lrc","pic":"http://cube-1252774894.cosgz.myqcloud.com/music/image/葉月ゆら - 宵闇花火.jpg"}]}'
+        window.musicModule.lrcConfig = {
+            open: 'Open Lyrics',
+            close: 'Close Lyrics'
+        }
+    })(window)
+</script>
+
+
+
+<div class="cube-recent-posts cube-sidebar" id="cube-recent-posts">
+    <div class="title">
+        <a>Recent Posts</a>
+    </div>
+    <ul class="list">
+        
+        
+        <li>
+            <!-- TODO 如果文章要显示图片，那么在front-matter上添加preview属性(url or path) -->
+            
+            <div class="normal">
+                <p class="index first">
+                    <span>1</span>
+                </p>
+                <p class="title">
+                    <a href="/2019/07/19/day17-正则表达式/" title=""></a>
+                </p>
+            </div>
+            
+        </li>
+        
+        
+        
+        <li>
+            <div class="normal">
+                <p class="index">
+                    <span>2</span>
+                </p>
+                <p class="title">
+                    <a href="/2019/07/19/day20-时间模块/" title=""></a>
+                </p>
+            </div>
+        </li>
+        
+        
+        
+        <li>
+            <div class="normal">
+                <p class="index">
+                    <span>3</span>
+                </p>
+                <p class="title">
+                    <a href="/2019/07/19/day-17 作业/" title=""></a>
+                </p>
+            </div>
+        </li>
+        
+        
+        
+        <li>
+            <div class="normal">
+                <p class="index">
+                    <span>4</span>
+                </p>
+                <p class="title">
+                    <a href="/2019/07/19/day16-内存管理和拷贝/" title=""></a>
+                </p>
+            </div>
+        </li>
+        
+        
+        
+        <li>
+            <div class="normal">
+                <p class="index">
+                    <span>5</span>
+                </p>
+                <p class="title">
+                    <a href="/2019/07/19/day11-高阶函数/" title=""></a>
+                </p>
+            </div>
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+
+
+
+
+
+<div class="cube-links cube-sidebar" id="cube-links">
+    <div class="title">
+        <a>Links</a>
+    </div>
+    <ul class="list">
+        
+        <li>
+            
+            
+            <img src="http://cube-1252774894.cosgz.myqcloud.com/links/GitHub.png">
+            
+            <a href="https://github.com/ZEROKISEKI" target="_blank">GitHub</a>
+        </li>
+        
+        <li>
+            
+            
+            <img src="http://cube-1252774894.cosgz.myqcloud.com/links/Coding.png">
+            
+            <a href="https://coding.net/u/SORA1" target="_blank">Coding</a>
+        </li>
+        
+        <li>
+            
+            
+            <img src="http://cube-1252774894.cosgz.myqcloud.com/links/SF.png">
+            
+            <a href="https://segmentfault.com/u/aonosora" target="_blank">SF社区</a>
+        </li>
+        
+        <li>
+            
+            
+            <img src="http://cube-1252774894.cosgz.myqcloud.com/links/开发者头条.png">
+            
+            <a href="https://toutiao.io/u/148070" target="_blank">开发者头条</a>
+        </li>
+        
+    </ul>
+</div>
+
+
+
+<div class="cube-friend-links cube-sidebar" id="cube-friend-links">
+    <div class="title">
+        <a>Friend Links</a>
+    </div>
+    <ul class="list">
+        
+        <li>
+            <!-- TODO change avatar.png to friend.png-->
+            <img src="http://cube-1252774894.cosgz.myqcloud.com/friend_links/micblo.png">
+            <a href="https://blog.micblo.com/" target="_blank">罗大佬</a>
+        </li>
+        
+        <li>
+            <!-- TODO change avatar.png to friend.png-->
+            <img src="http://cube-1252774894.cosgz.myqcloud.com/friend_links/DIYgod.jpg">
+            <a href="https://www.anotherhome.net/" target="_blank">DIYgod</a>
+        </li>
+        
+        <li>
+            <!-- TODO change avatar.png to friend.png-->
+            <img src="/images/friend_links.jpg ">
+            <a href="https://aonosora.com/" target="_blank">咪西西の部落格</a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+    </div>
+</div>
+<footer class="cube-footer">
+    
+© 2017 shunkouliu
+
+<br>
+Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>.&nbsp;Theme by <a href="https://github.com/ZEROKISEKI" target="_blank">AONOSORA</a>
+</footer>
+<!-- inject:script -->
+<script src="/js/script.js"></script>
+<!-- endinject -->
+<div class="cube-loading out"></div>
+</body>
+</html>
